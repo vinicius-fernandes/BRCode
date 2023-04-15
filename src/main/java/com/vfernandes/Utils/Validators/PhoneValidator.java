@@ -3,7 +3,7 @@ package com.vfernandes.Utils.Validators;
 import java.util.regex.Pattern;
 
 public class PhoneValidator {
-    private static final String PHONE_REGEX = "^+[1-9][0-9]d{1,14}$";
+    private static final String PHONE_REGEX = "^\\+[1-9][0-9]{1,14}$";
     private static final Pattern PHONE_PATTERN = Pattern.compile(PHONE_REGEX);
 
     /***

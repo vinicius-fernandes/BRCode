@@ -3,7 +3,7 @@ package com.vfernandes.Utils.Validators;
 import java.util.regex.Pattern;
 
 public class EVPValidator {
-    private static final String EVP_REGEX = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
+    private static final String EVP_REGEX = "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}";
     private static final Pattern EVP_PATTERN = Pattern.compile(EVP_REGEX);
 
     /***
