@@ -1,4 +1,4 @@
-package com.vfernandes.Utils;
+package com.vfernandes.Utils.Validators;
 
 import java.util.regex.Pattern;
 

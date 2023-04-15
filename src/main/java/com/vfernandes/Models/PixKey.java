@@ -2,11 +2,11 @@ package com.vfernandes.Models;
 
 
 import com.vfernandes.Enums.PixKeyType;
-import com.vfernandes.Utils.CNPJValidator;
-import com.vfernandes.Utils.CPFValidator;
-import com.vfernandes.Utils.EVPValidator;
-import com.vfernandes.Utils.EmailValidator;
-import com.vfernandes.Utils.PhoneValidator;
+import com.vfernandes.Utils.Validators.CNPJValidator;
+import com.vfernandes.Utils.Validators.CPFValidator;
+import com.vfernandes.Utils.Validators.EVPValidator;
+import com.vfernandes.Utils.Validators.EmailValidator;
+import com.vfernandes.Utils.Validators.PhoneValidator;
 
 public class PixKey {
     private String key;

@@ -1,9 +1,9 @@
-package com.vfernandes.Utils;
+package com.vfernandes.Utils.Validators;
 
 import java.util.regex.Pattern;
 
 public class CNPJValidator {
-    private static final String CNPJ_REGEX = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
+    private static final String CNPJ_REGEX = "^[0-9]{14}$";
     private static final Pattern CNPJ_PATTERN = Pattern.compile(CNPJ_REGEX);
 
     /***

@@ -1,4 +1,4 @@
-package Enums;
+package com.vfernandes.Enums;
 
 public enum PixKeyType {
     CPF,
