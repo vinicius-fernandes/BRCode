@@ -11,6 +11,10 @@ public class CRC16 {
      */
 
     public static int CRC16C_CITTFALSE(byte[] bytes){
+
+        if(bytes == null)
+            throw new IllegalArgumentException("The value to be converted must not be null");
+
         int crc = 0xFFFF;          // initial value
         int polynomial = 0x1021;   // 0001 0000 0010 0001  (0, 5, 12)
 
@@ -35,6 +39,8 @@ public class CRC16 {
      */
 
     public static String CRC16_CITTFALSE_HEX_STRING(String value){
+        if(value == null)
+            throw new IllegalArgumentException("The value to be converted must not be null");
         int CRC16_FALSE = CRC16.CRC16C_CITTFALSE(value.getBytes());
         return String.format("%04x",CRC16_FALSE).toUpperCase();
     }
